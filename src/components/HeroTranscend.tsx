@@ -52,8 +52,8 @@ export default function HeroTranscend() {
         <aside className="left-copy">
           <p className="copy-title">Guided by the Delta</p>
           <p className="copy-body">
-            Creating unforgettable experiences<br />
-            through sound, light and innovation.
+            Transforming ideas into unforgettable experiences 
+            through creativity and <br /> innovation.
           </p>
         </aside>
 
