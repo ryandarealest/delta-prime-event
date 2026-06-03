@@ -8,9 +8,7 @@ import Reveal from "@/components/Reveal";
 export default function Home() {
   return (
     <>
-    <Reveal>
         <HeroTranscend />
-      </Reveal>
         <UpcomingEvents />
         <EventDetail />
         <AboutGlow />
