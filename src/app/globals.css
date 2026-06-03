@@ -1559,7 +1559,7 @@ button {
 
 @media (max-width: 640px) {
   .hero-title {
-    top: 20%;
+    top: 15%;
     left: 50%;
 
     width: 100%;
@@ -1788,4 +1788,53 @@ button {
   .explore {
     font-size: 11px !important;
   }
+}
+
+.reveal {
+  opacity: 0;
+
+  transform:
+    translateY(100px)
+    scale(.95);
+
+  filter: blur(8px);
+
+  transition:
+    opacity .9s ease,
+    transform .9s ease,
+    filter .9s ease;
+
+  will-change:
+    opacity,
+    transform,
+    filter;
+}
+
+.reveal.show {
+  opacity: 1;
+
+  transform:
+    translateY(0)
+    scale(1);
+
+  filter: blur(0);
+}
+
+/* FIX FOOTER MAILBOX OVERLAP COPYRIGHT */
+
+.trans-footer {
+  padding-bottom: 110px;
+}
+
+.newsletter {
+  position: relative;
+  z-index: 5;
+}
+
+.mailbox {
+  margin-bottom: 34px;
+}
+
+.footer-bottom {
+  bottom: 26px;
 }
