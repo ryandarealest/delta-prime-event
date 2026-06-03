@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function TranscendFooter() {
   return (
     <footer className="trans-footer">
-      <div className="footer-bg-person" />
+      {/* <div className="footer-bg-person" /> */}
 
       <div className="footer-brand">
         <div className="footer-brand-head">
@@ -28,26 +28,30 @@ export default function TranscendFooter() {
           the light of endless creation.
         </p>
 
-        <div className="footer-socials">
-          <a href="#" aria-label="Instagram">
-            <FaInstagram />
-          </a>
-
-          <a href="#" aria-label="Behance">
-            <FaBehance />
-          </a>
-
-          <a href="#" aria-label="X">
-            <FaXTwitter />
-          </a>
-
-          <a href="#" aria-label="Youtube">
-            <FaYoutube />
-          </a>
-
-          <a href="#" aria-label="Spotify">
-            <FaSpotify />
-          </a>
+        <div className="mailbox">
+          <input type="email" placeholder="Your email address" />
+          <button>
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M5 12H19"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+              />
+              <path
+                d="M13 6L19 12L13 18"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -81,9 +85,26 @@ export default function TranscendFooter() {
         <h3>STAY IN THE GLOW</h3>
         <p>Get the latest events, stories and exclusive updates.</p>
 
-        <div className="mailbox">
-          <input type="email" placeholder="Your email address" />
-          <button>→</button>
+        <div className="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <FaInstagram />
+          </a>
+
+          <a href="#" aria-label="Behance">
+            <FaBehance />
+          </a>
+
+          <a href="#" aria-label="X">
+            <FaXTwitter />
+          </a>
+
+          <a href="#" aria-label="Youtube">
+            <FaYoutube />
+          </a>
+
+          <a href="#" aria-label="Spotify">
+            <FaSpotify />
+          </a>
         </div>
       </div>
 
