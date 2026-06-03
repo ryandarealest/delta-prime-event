@@ -1792,32 +1792,18 @@ button {
 
 .reveal {
   opacity: 0;
-
-  transform:
-    translateY(100px)
-    scale(.95);
-
-  filter: blur(8px);
+  transform: translate3d(0, 36px, 0);
 
   transition:
-    opacity .9s ease,
-    transform .9s ease,
-    filter .9s ease;
+    opacity .55s ease,
+    transform .55s ease;
 
-  will-change:
-    opacity,
-    transform,
-    filter;
+  will-change: opacity, transform;
 }
 
 .reveal.show {
   opacity: 1;
-
-  transform:
-    translateY(0)
-    scale(1);
-
-  filter: blur(0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* FIX FOOTER MAILBOX OVERLAP COPYRIGHT */
@@ -1838,3 +1824,25 @@ button {
 .footer-bottom {
   bottom: 26px;
 }
+
+@media (max-width: 768px) {
+  .hero-bg::before,
+  .hero-bg::after,
+  .section-divider::before,
+  .section-divider::after {
+    animation: none !important;
+  }
+
+}
+
+/* PERSON SMALLER ON MOBILE MENU MODE */
+
+@media (max-width: 640px) {
+  .person-wrap {
+    width: 104vw !important;
+    height: 66vh !important;
+    left: 52% !important;
+    bottom: 0vh !important;
+  }
+}
+

@@ -1,7 +1,8 @@
 import type { CSSProperties } from "react";
+import Reveal from "@/components/Reveal";
 const events = [
   { day: '24', month: 'MAY', title: 'DELTA NIGHT', type: 'ELECTRONIC EXPERIENCE', place: 'Da Nang, Vietnam', image: '/images/event-1.jpg' },
-  { day: '08', month: 'JUN', title: 'PRIME CHAPTER II', type: 'VISUAL SHOWCASE', place: 'Ho Chi Minh City', image: '/images/event-2.jpg' },
+  { day: '08', month: 'JUN', title: 'PRIME CHAPTER II', type: 'VISUAL SHOWCASE', place: 'Ho Chi Minh, Vietnam', image: '/images/event-2.jpg' },
   { day: '21', month: 'JUN', title: 'BEYOND REALITY', type: 'ART & TECHNOLOGY', place: 'Ha Noi, Vietnam', image: '/images/event-3.jpg' },
 ];
 
@@ -10,15 +11,27 @@ export default function UpcomingEvents() {
     <section className="event-section" id="events">
       <div className="section-bg section-bg-events" />
       <div className="section-glow" />
-
+      <Reveal>
       <div className="events-intro reveal-up">
-        <p className="eyebrow">EVENTS</p>
-        <h2>UPCOMING<br />EVENTS</h2>
-        <span className="line" />
-        <p className="intro-text">Step into a world where light shapes moments and moments become unforgettable.</p>
-        <a className="pill-btn" href="#detail">VIEW ALL EVENTS <span>→</span></a>
+        <Reveal>
+          <p className="eyebrow">EVENTS</p>
+        </Reveal>
+        <Reveal>
+          <h2>UPCOMING<br />EVENTS</h2>
+        </Reveal>
+        <Reveal>
+          <span className="line" />
+        </Reveal>
+        <Reveal>
+          <p className="intro-text">Step into a world where light shapes moments and moments become unforgettable.</p>
+        </Reveal>
+        <Reveal>
+          <a className="pill-btn" href="#detail">VIEW ALL EVENTS <span>→</span></a>
+        </Reveal>
       </div>
-
+      </Reveal>
+      
+      <Reveal>
       <div className="event-cards">
         {events.map((event, index) => (
           <article className="event-card reveal-up" style={{ '--delay': `${index * 120}ms` } as CSSProperties} key={event.title}>
@@ -32,6 +45,7 @@ export default function UpcomingEvents() {
           </article>
         ))}
       </div>
+      </Reveal>
     </section>
   );
 }

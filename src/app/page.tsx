@@ -8,25 +8,14 @@ import Reveal from "@/components/Reveal";
 export default function Home() {
   return (
     <>
-      <Reveal>
+    <Reveal>
         <HeroTranscend />
       </Reveal>
-      
-      <Reveal>
         <UpcomingEvents />
-      </Reveal>
-
-      <Reveal>
         <EventDetail />
-      </Reveal>
-
-      <Reveal>
         <AboutGlow />
-      </Reveal>
-
-      <Reveal>
         <TranscendFooter />
-      </Reveal>
+      
     </>
   );
 }

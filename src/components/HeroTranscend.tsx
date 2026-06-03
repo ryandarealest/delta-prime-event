@@ -39,7 +39,7 @@ export default function HeroTranscend() {
         {/* LAYER 2: chữ nền */}
         <div className="hero-title">
           <span className="title-left">DELTA</span>
-          <span className="title-right">PRIME</span>  
+          <span className="title-right">PRIME</span>
         </div>
 
 
@@ -52,10 +52,8 @@ export default function HeroTranscend() {
         <aside className="left-copy">
           <p className="copy-title">Guided by the Delta</p>
           <p className="copy-body">
-            In the haze of luminous<br />
-            brilliance, existence is<br />
-            reborn, carried by the light<br />
-            of endless creation
+            Creating unforgettable experiences<br />
+            through sound, light and innovation.
           </p>
         </aside>
 
